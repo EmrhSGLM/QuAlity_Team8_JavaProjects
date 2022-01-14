@@ -3,6 +3,7 @@ package market_Projesi;
 public class Ekleme extends Data {
     String isim;
     double ucret;
+    int adet;
     static double sepet;
 
     Ekleme() {
@@ -11,13 +12,23 @@ public class Ekleme extends Data {
 
     @Override
     public String toString() {
-        return  isim + ucret ;
+        return  "Urun_Ismi=> "+isim + " Ucreti => "+ucret ;
     }
 
     public Ekleme(String isim, double ucret) {
         this.isim = isim;
         this.ucret = ucret;
     }
+
+    public Ekleme(int adet,String isim, double ucret) {
+        this.adet=adet;
+        this.isim = isim;
+        this.ucret = ucret;
+    }
+
+    public int getAdet() {return adet;    }
+
+    public void setAdet(int adet) {  this.adet = adet;    }
 
     public String getIsim() { return isim; }
 
