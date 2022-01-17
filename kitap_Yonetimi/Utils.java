@@ -13,10 +13,10 @@ public class Utils extends Depo {
 
     protected static void ekle(){
         kitaplar.add(new Depo(id++,"Yaban","Yakup Kadri Karaosmanoğlu","YKY","2005"));
-        kitaplar.add(new Depo(id++,"Yaban","Yakup Kadri Karaosmanoğlu","YKY","2005"));
-        kitaplar.add(new Depo(id++,"Yaban","Yakup Kadri Karaosmanoğlu","YKY","2005"));
-        kitaplar.add(new Depo(id++,"Yaban","Yakup Kadri Karaosmanoğlu","YKY","2005"));
-        kitaplar.add(new Depo(id++,"Yaban","Yakup Kadri Karaosmanoğlu","YKY","2005"));
+        kitaplar.add(new Depo(id++,"Kuyucaklı Yusuf","Sabahattin Ali","YKY","2007"));
+        kitaplar.add(new Depo(id++,"Bir Çift Yürek","Mario Morgan","Altın","2012"));
+        kitaplar.add(new Depo(id++,"Ankara","Yakup Kadri Karaosmanoğlu","YKY","2005"));
+        kitaplar.add(new Depo(id++,"Zeytindağı","Falih Rıfkı Atay","YKY","2010"));
     }
 
     protected static void kutuphane() {
@@ -49,7 +49,6 @@ public class Utils extends Depo {
                 System.out.println("Hatalı giriş yaptınız");
                 kutuphane();
                 break;
-
         }
     }
 
@@ -86,6 +85,7 @@ public class Utils extends Depo {
                 default :
                     System.out.println("Hatalı giris yaptiniz ");
             }
+            break;
         }
 
     }
@@ -100,13 +100,15 @@ public class Utils extends Depo {
             boolean result= kitaplar.removeIf(t -> t.getId() == tercih);
             if(result){
                 System.out.println(tercih + " id'li kitap basariyla silindi");
+                break;
             } else {
                 System.out.println("Girmis oldugunuz " + tercih + " id'sine ait kitap bulunamadı");
                 count++;
             }
             if(count == 3){
                 System.out.println("id numarasini 3 defa yanlıs girdiniz ");
-                break;}
+                break;
+            }else break;
         }
 
         for(int i=1;i>0;i++){
@@ -129,6 +131,7 @@ public class Utils extends Depo {
                 default :
                     System.out.println("Hatalı giris yaptiniz ");
             }
+            break;
         }
 
     }
@@ -152,6 +155,7 @@ public class Utils extends Depo {
                 default :
                     System.out.println("Hatalı giris yaptiniz ");
             }
+            break;
         }
     }
 
