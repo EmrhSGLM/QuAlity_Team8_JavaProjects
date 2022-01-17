@@ -7,8 +7,7 @@ public class Depo{
 
      int id;
      String kitapAd;
-     String yazarAd;
-     String yazarSoyad;
+     String yazarAdSoyad;
      String yayinEvi;
      String basimYili;
 
@@ -20,18 +19,16 @@ public class Depo{
         return "Kitap Bilgileri => {" +
                 "id=" + id +
                 ", kitapAd='" + kitapAd + '\'' +
-                ", yazarAd='" + yazarAd + '\'' +
-                ", yazarSoyad='" + yazarSoyad + '\'' +
+                ", yazarAd='" + yazarAdSoyad + '\'' +
                 ", yayinEvi='" + yayinEvi + '\'' +
                 ", basimYili='" + basimYili + '\'' +
                 '}';
     }
 
-    public Depo(int id, String kitapAd, String yazarAd, String yazarSoyad, String yayinEvi, String basimYili) {
+    public Depo(int id, String kitapAd, String yazarAdSoyad, String yayinEvi, String basimYili) {
         this.id = id;
         this.kitapAd = kitapAd;
-        this.yazarAd = yazarAd;
-        this.yazarSoyad = yazarSoyad;
+        this.yazarAdSoyad = yazarAdSoyad;
         this.yayinEvi = yayinEvi;
         this.basimYili = basimYili;
     }
@@ -44,13 +41,9 @@ public class Depo{
 
     public void setKitapAd(String kitapAd) { this.kitapAd = kitapAd;    }
 
-    public String getYazarAd() {  return yazarAd;    }
+    public String getYazarAdSyad() {  return yazarAdSoyad;    }
 
-    public void setYazarAd(String yazarAd) {  this.yazarAd = yazarAd;    }
-
-    public String getYazarSoyad() { return yazarSoyad;    }
-
-    public void setYazarSoyad(String yazarSoyad) { this.yazarSoyad = yazarSoyad;    }
+    public void setyazarAdSoyad(String yazarAdSoyad) {  this.yazarAdSoyad = yazarAdSoyad;    }
 
     public String getYayinEvi() { return yayinEvi;    }
 
